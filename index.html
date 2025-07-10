@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Test</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen text-white">
+  <div>
+    <div id="card" class="bg-gradient-to-r from-red-400 to-blue-400 rounded-2xl p-6">
+      <div class="flex justify-center mb-3">
+      <img class="h-24 w-24 rounded-full" src="https://i.natgeofe.com/k/aa4c480f-89ec-4c21-97c3-4348a9c310bf/kangaroo-joey_square.jpg">
+    </div>
+    <div class="flex flex-col items-center mb-3">
+      <h1 class="font-bold text-2xl">Bhawna Dipanshu</h1>
+      <p class="text-gray-200">Designer and Learner</p>
+    </div>
+    <div class="flex justify-center mb-3">
+      <p class="font-bold">we love arguing</p>
+    </div>
+    <div>
+      <div class="flex justify-center space-x-4">
+        <button onclick="start()" class="bg-amber-400 p-2 rounded-full text-black font-semibold hover:cursor-pointer">24*7 Fights</button>
+        <button class="bg-amber-400 p-2 rounded-full text-black font-semibold hover:cursor-pointer">Toxic Environment</button>
+        <button class="bg-amber-400 p-2 rounded-full text-black font-semibold hover:cursor-pointer">Great people</button>
+      </div>
+      <div class="flex justify-center mt-3">
+        <button class="bg-amber-900 py-2 px-4 font-semibold rounded-full hover:cursor-pointer">Contact Us</button>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div id="game" class="hidden">
+    <div class="mt-6 flex justify-center space-x-10">
+    <div id="character1" class="flex flex-col items-center">
+  <div class="w-16 h-16 bg-green-300 rounded-full"></div>
+  <div class="flex items-center">
+    <div id="left-hand" class="w-4 h-12 bg-red-500 origin-top transition-transform duration-200"></div>
+    <div class="w-8 h-20 bg-blue-500 mx-2"></div>
+    <div id="right-hand" class="w-4 h-12 bg-red-500 origin-top transition-transform duration-200"></div>
+  </div>
+</div>
+<div id="character2" class="flex flex-col items-center">
+  <div class="w-16 h-16 bg-pink-300 rounded-full"></div>
+  <div class="flex items-center">
+    <div id="left-hand2" class="w-4 h-12 bg-red-500 origin-top transition-transform duration-200"></div>
+    <div class="w-8 h-20 bg-blue-500 mx-2"></div>
+    <div id="right-hand2" class="w-4 h-12 bg-red-500 origin-top transition-transform duration-200"></div>
+  </div>
+</div>
+</div>
+<div class="mt-6 flex justify-center space-x-10">
+  <div class="mt-4 text-center space-x-4">
+  <button onclick="punch('left-hand')" class="bg-black p-3 rounded-full font-bold hover:bg-red-700">👊L</button>
+  <button onclick="punch('right-hand')" class="bg-black p-3 rounded-full font-bold hover:bg-red-700">👊R</button>
+</div>
+<div class="mt-4 text-center space-x-4">
+  <button onclick="punch('left-hand2')" class="bg-black p-3 rounded-full font-bold hover:bg-red-700">👊L</button>
+  <button onclick="punch('right-hand2')" class="bg-black p-3 rounded-full font-bold hover:bg-red-700">👊R</button>
+</div>
+</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
